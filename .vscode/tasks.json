@@ -1,0 +1,41 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/Azure Event Grid Demo/Azure.Demos.EventGrid.Publisher/Azure.Demos.EventGrid.Publisher.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/Azure Event Grid Demo/Azure.Demos.EventGrid.Publisher/Azure.Demos.EventGrid.Publisher.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "--project",
+                "${workspaceFolder}/Azure Event Grid Demo/Azure.Demos.EventGrid.Publisher/Azure.Demos.EventGrid.Publisher.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
